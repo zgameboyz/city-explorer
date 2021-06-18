@@ -99,9 +99,13 @@ class Forms extends React.Component {
             </ul>
           </Card>
         }
+        {this.state.cityMap?
         <Card style={{ width: '30rem' }}>
+         
           <Card.Img variant="top" src={this.state.cityMap} />
         </Card>
+        :""
+       }
         <Weather banana={this.state.weather} />
         <Movie banana={this.state.movie}/>
 
