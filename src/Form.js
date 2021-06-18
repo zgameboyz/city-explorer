@@ -6,6 +6,7 @@ import Button from 'react-bootstrap/Button'
 import axios from 'axios';
 import Card from 'react-bootstrap/Card'
 import Container from 'react-bootstrap/Container';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const key = process.env.REACT_APP_CITY_KEY;
 
