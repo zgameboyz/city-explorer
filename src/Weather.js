@@ -1,5 +1,6 @@
 import React from 'react';
 import {ListGroup} from 'react-bootstrap';
+import WeatherDays from './WeatherDays';
 class Weather extends React.Component{
   render(){
     console.log(this.props)
@@ -7,15 +8,17 @@ class Weather extends React.Component{
       <>
       <h3>Weather</h3>
 
-<ListGroup>
-  {this.props.banana.map((weather,i)=>
-  <ListGroup.Item key={i}>
-    {weather.date}: {weather.description}
-  </ListGroup.Item>)}</ListGroup>
+    
+       <ListGroup>
+         {this.props.banana.map((object,i)=>
+         
+          <WeatherDays key={i} date={object.date} description = {object.description} />
 
-        </>
-    )
-  }
+         )
+        }
+   </ListGroup>
+   </>
+    )}
 }
 
 export default Weather
